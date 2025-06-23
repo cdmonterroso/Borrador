@@ -129,7 +129,7 @@ func main() {
 	//Crea una política de CORS (Cross-Origin Resource Sharing) para permitir que Angular (desde localhost:4200) se conecte.
 	//Esto es necesario para evitar bloqueos del navegador al hacer peticiones desde otro dominio/puerto.
 	c := cors.New(cors.Options{
-		AllowedOrigins:   []string{"http://localhost:4200"},
+		AllowedOrigins:   []string{"*"},
 		AllowedMethods:   []string{"GET", "POST", "OPTIONS"},
 		AllowedHeaders:   []string{"Content-Type"},
 		AllowCredentials: true,
